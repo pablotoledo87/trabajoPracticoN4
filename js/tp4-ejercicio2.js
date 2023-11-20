@@ -1,14 +1,17 @@
 const cuenta ={
     titular : "Alex",
     valorInicial: 0,
-    añadirSaldo(agregarSaldo){
+    añadirSaldo: function(agregarSaldo){
         this.valorInicial = this.valorInicial + agregarSaldo,
         document.write(`Su saldo es: ${this.valorInicial}`)
     },
-    quitarSaldo(sustraerSaldo){
+    quitarSaldo: function(sustraerSaldo){
         this.valorInicial = this.valorInicial + sustraerSaldo,
         document.write(`Su saldo es: ${this.valorInicial}`)
     },
+    informeCuenta: function(){
+        Document.write(`su saldo es: ${this.valorInicial}`);
+    }
 
 
 }
