@@ -5,10 +5,10 @@ class Personas{
         this.profesion = profesionParam;
 
        this.saludar= function(){
-            document.write(`hola! ${this.nombre}`);
+            document.write(`<h2>hola! ${this.nombre}</h2>`);
        };
        this.despedirse= function(){
-        document.write(`chau! ${this.nombre}`);
+        document.write(`<p>chau! ${this.nombre}</p>`);
    };
 
 
@@ -16,11 +16,11 @@ class Personas{
 }
 const Sebastian = new Personas(`Sebastian Toledo`, `38`, `Instrumentista quirurgico`)
 console.log(Sebastian)
-Personas.saludar();
-Personas.despedirse();
+Sebastian.saludar();
+Sebastian.despedirse();
 
 const Miriam = new Personas(`Miriam Toledo`, `45`, `Modista`)
 
 console.log(Miriam)
-Personas.saludar();
-Personas.despedirse();
+Miriam.saludar();
+Miriam.despedirse();
